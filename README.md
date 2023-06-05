@@ -38,7 +38,7 @@ The Observer pattern lets you define a subscription mechanism to notify multiple
 
 + Visitor
 ```
-The Visitor pattern lets you separate algorithms from the objects on which they operate.
+The Visitor pattern isolates particular behaviors from the objects on which they operate into separate classes called visitors. This lets the classes to be more focused on their main job hence promoting flexibility and maintainability.
 ```
 
 
