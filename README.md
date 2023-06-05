@@ -23,6 +23,10 @@ The Decorator pattern lets you attach new behaviors to objects by placing these 
 ```
 The Composite pattern lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 ```
++ Adapter
+```
+The Adapter pattern allows objects with incompatible interfaces to collaborate. The Adapter acts as a wrapper between two objects. It catches calls for one object and transforms them to format and interface recognizable by the second object.
+```
 
 ## 3. Behavioral patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects.
