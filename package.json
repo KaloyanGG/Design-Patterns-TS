@@ -1,0 +1,14 @@
+{
+  "name": "ts-project-template-and-debugging-ready",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js ",
+    "buildAndStart": "tsc && node dist/app.js ",
+    "buildAndStartWithAWebSocketForADebugger": "tsc && node --inspect=9229 dist/app.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
