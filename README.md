@@ -11,6 +11,11 @@ The Singleton pattern ensures that a class has only one instance and provides a 
 The Factory Method pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 ```
 
++ Builder method
+```
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.
+```
+
 
 ## 2. Structural patterns
 These patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
