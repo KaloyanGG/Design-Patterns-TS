@@ -38,6 +38,11 @@ The Adapter pattern allows objects with incompatible interfaces to collaborate. 
 The Proxy provides an object that acts as a substitute for a real service object used by a client. A proxy receives client requests, does some work (access control, caching, etc.) and then passes the request to a service object.
 ```
 
++ Facade
+```
+Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+```
+
 ## 3. Behavioral patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects.
 

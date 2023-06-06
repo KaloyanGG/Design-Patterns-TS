@@ -25,10 +25,11 @@ castle.listParts();
 console.log('------');
 
 //! With director:
+const director = new Director();
 
 //* Building a castle by the director 
 const anotherCastleBuilder = new CastleBuilder();
-const director = new Director(anotherCastleBuilder);
+director.setBuilder(anotherCastleBuilder);
 director.buildCastleWithEverything();
 anotherCastleBuilder.castle.listParts();
 
