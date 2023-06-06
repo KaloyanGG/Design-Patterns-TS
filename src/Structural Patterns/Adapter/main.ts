@@ -1,21 +1,37 @@
-import ThirdPartyLineSpeaker from "./adaptee";
-import Adapter from "./adapter";
-import Speech from "./target";
+class Mp4SongList {
+    play(): string {
+        return '.sgnos 4pm emos gniyalP';
+    }
+}
 
-//* Speech which is the target which we are going to wrap
-const target = new Speech();
-console.log(target.speak());
+interface Mp3PlayerInterface {
+    playMusic(): string;
+}
 
-console.log('');
+class Mp3Player implements Mp3PlayerInterface {
 
-//* Third party library or legacy code which we are going to use in our adapter and now works strange ( Adaptee )
-const thirdPartyLineSpeaker = new ThirdPartyLineSpeaker();
-console.log('ThirdParty adaptee: ' + thirdPartyLineSpeaker.speakReversed());
+    playMusic(): string {
+        return 'Playing some mp3 songs.';
+    }
 
-console.log('');
+}
 
-//* The adapter which makes the Adaptee's interface compatible with the Target's interface.
-const adapter = new Adapter(thirdPartyLineSpeaker);
-console.log('Adapter: ' + adapter.speak());
+class Mp4ToMp3Adapter implements Mp3PlayerInterface {
 
+    constructor(private mp4PlayerSongList: Mp4SongList) { }
 
+    playMusic(): string {
+        const mp4Songs = this.mp4PlayerSongList.play().split('').reverse().join('');
+        return 'Playing the mp3 songs and Converted:\n ->' + mp4Songs;
+    }
+
+}
+
+const mp3Player = new Mp3Player();
+console.log(mp3Player.playMusic());
+
+const mp4SongList = new Mp4SongList();
+console.log(mp4SongList.play());
+
+const adapter = new Mp4ToMp3Adapter(mp4SongList);
+console.log(adapter.playMusic());
