@@ -28,6 +28,11 @@ The Composite pattern lets you compose objects into tree structures and then wor
 The Adapter pattern allows objects with incompatible interfaces to collaborate. The Adapter acts as a wrapper between two objects. It catches calls for one object and transforms them to format and interface recognizable by the second object.
 ```
 
++ Proxy
+```
+The Proxy provides an object that acts as a substitute for a real service object used by a client. A proxy receives client requests, does some work (access control, caching, etc.) and then passes the request to a service object.
+```
+
 ## 3. Behavioral patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
