@@ -70,5 +70,10 @@ The Chain of Responsibility pattern lets you pass requests along a chain of hand
 The Iterator pattern lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 ```
 
++ Strategy
+```
+The Strategy pattern lets you define a family of interchangeable objects and put them into action when they’re needed.
+```
+
 
 
