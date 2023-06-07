@@ -60,4 +60,15 @@ The Observer pattern lets you define a subscription mechanism to notify multiple
 The Visitor pattern isolates particular behaviors from the objects on which they operate into separate classes called visitors. This lets the classes to be more focused on their main job hence promoting flexibility and maintainability.
 ```
 
++ Chain of responsibility
+```
+The Chain of Responsibility pattern lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+```
+
++ Iterator
+```
+The Iterator pattern lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
+```
+
+
 
